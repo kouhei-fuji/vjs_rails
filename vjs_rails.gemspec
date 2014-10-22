@@ -1,21 +1,21 @@
-$:.push File.expand_path("../lib", __FILE__)
+# encoding: utf-8
+$:.push File.expand_path('../lib', __FILE__)
 
 # Maintain your gem's version:
-require "vjs_rails/version"
+require 'vjs_rails/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "vjs_rails"
+  s.name        = 'vjs_rails'
   s.version     = VjsRails::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of VjsRails."
-  s.description = "TODO: Description of VjsRails."
+  s.authors     = ['Kouhei Fujigaya']
+  s.email       = ['kouhei.fujigaya@gmail.com']
+  s.homepage    = 'https://github.com/kouhei-fuji/vjs_rails'
+  s.summary     = 'Video.js for Rails.'
+  s.description = 'VjsRails is for using Video.js in Rails app.'
+  s.licenses    = ['MIT']
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir['{lib,app}/**/*', 'vendor/assets/**/*', 'MIT-LICENSE', 'README.md']
 
-  s.add_dependency "rails", "~> 4.0.2"
-
-  s.add_development_dependency "sqlite3"
+  s.add_dependency 'railties', '>= 4.0.2'
 end
