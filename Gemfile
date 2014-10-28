@@ -13,6 +13,7 @@ gem 'less-rails'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
+  gem 'rspec-html-matchers'
 end
 
 # Declare your gem's dependencies in vjs_rails.gemspec.
