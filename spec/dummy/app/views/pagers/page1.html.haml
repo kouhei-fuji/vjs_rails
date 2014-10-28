@@ -1,2 +1,6 @@
 %h1 Pagers#page1
 %p Find me in app/views/pagers/page1.html.haml
+= link_to 'page2', pagers_page2_path
+#box{ style: 'margin-top: 20px;' }
+  = render_video_for_vjs id: 'my_video', :class => 'my_video_class', width: '640', height: '264', poster: 'http://video-js.zencoder.com/oceans-clip.png', sources: { :'video/mp4' => 'http://video-js.zencoder.com/oceans-clip.mp4', :'video/webm' => 'http://video-js.zencoder.com/oceans-clip.webm' }, captions: { ja: { :'日本語' => '/captions.ja.vtt' }, en: { :'English' => '/captions.en.vtt' } } do
+    Customize Message when js is not woking
