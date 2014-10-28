@@ -1,0 +1,15 @@
+<video id='<%= options[:id] %>' class='video-js vjs-default-skin <%= options[:class] %>' data-setup='<%= data_setup %>'>
+  <%- if options[:sources] %>
+    <%- options[:sources].each do |mime, url| %>
+      <source src='<%= url %>' type='<%= mime %>' />
+    <%- end %>
+  <%- end %>
+  <%- if options[:captions] %>
+    <%- options[:captions].each do |lang, pair| %>
+      <%- pair.each do |label, url| %>
+        <track kind='captions' src='<%= url %>' srclang='<%= lang %>' label='<%= label %>'></track>
+      <%- end %>
+    <%- end %>
+  <%- end %>
+  <p class='vjs-no-js'><%= yield :vjs_rails %></p>
+</video>
