@@ -35,11 +35,10 @@ In your `application.js`:
 # required
 //= require vjs
 
-# if you use jquery-turbolinks
+# if you use turbolinks
 //= require jquery
 //= require turbolinks
-//= require jquery.turbolinks
-//= require vjs.jquery.turbolinks
+//= require vjs.turbolinks
 
 # if you want to use local flash.swf
 //= require vjs.flash
@@ -54,8 +53,8 @@ In your `application.css`:
 /*
  *= require vjs
  *
- * If you want to customize, see: http://designer.videojs.com/
- * copy and add your customized css
+ * If you want to customize it, see: http://designer.videojs.com/
+ * you can copy and add your customized css instead of `vjs`
  *
  *= require my_custom_css
  */
