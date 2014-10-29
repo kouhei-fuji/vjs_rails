@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.email       = ['kouhei.fujigaya@gmail.com']
   s.homepage    = 'https://github.com/kouhei-fuji/vjs_rails'
   s.summary     = 'Video.js for Rails.'
-  s.description = 'VjsRails is for using Video.js in Rails app.'
+  s.description = 'VjsRails is for using Video.js in Rails applications.'
   s.licenses    = ['MIT']
 
   s.files = Dir['{lib,app}/**/*', 'vendor/assets/**/*', 'MIT-LICENSE', 'README.md']
