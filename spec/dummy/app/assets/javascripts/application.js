@@ -12,9 +12,8 @@
 //
 //= require jquery
 //= require turbolinks
-//= require jquery.turbolinks
 //= require vjs
-//= require vjs.jquery.turbolinks
+//= require vjs.turbolinks
 //= require vjs.flash
 //= require vjs.ja
 //= require_tree .

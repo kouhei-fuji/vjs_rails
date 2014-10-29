@@ -5,10 +5,9 @@ gem 'sqlite3'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jquery-turbolinks'
 gem 'haml-rails'
-gem 'therubyracer', platform: :ruby
 gem 'sass-rails'
+gem 'therubyracer', platform: :ruby
 gem 'less-rails'
 
 group :development, :test do
