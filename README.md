@@ -1,6 +1,6 @@
 # VjsRails
 
-[![Build Status](https://travis-ci.org/kouhei-fuji/vjs_rails.svg?branch=master)](https://travis-ci.org/kouhei-fuji/vjs_rails) [![Coverage Status](https://img.shields.io/coveralls/kouhei-fuji/vjs_rails.svg)](https://coveralls.io/r/kouhei-fuji/vjs_rails)
+[![Build Status](https://travis-ci.org/kouhei-fuji/vjs_rails.svg?branch=master)](https://travis-ci.org/kouhei-fuji/vjs_rails) [![Coverage Status](https://img.shields.io/coveralls/kouhei-fuji/vjs_rails.svg)](https://coveralls.io/r/kouhei-fuji/vjs_rails) [![Gem Version](https://badge.fury.io/rb/vjs_rails.svg)](http://badge.fury.io/rb/vjs_rails)
 
 VjsRails is for using Video.js in Rails applications.
 
@@ -89,6 +89,7 @@ If you don't use haml, please replace it.
 ## Example
 
 VjsRails provides an example rails application in spec/dummy directory.
+
 https://github.com/kouhei-fuji/vjs_rails/tree/master/spec/dummy
 
 ```
