@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 begin
   require 'bundler/setup'
 rescue LoadError
@@ -14,8 +16,13 @@ RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
-
-
+begin
+  require 'rspec/core/rake_task'
+  task :default => :spec
+  RSpec::Core::RakeTask.new(:spec) do |spec|
+    spec.pattern = 'spec/**/*_spec.rb'
+  end
+rescue LoadError
+end
 
 Bundler::GemHelper.install_tasks
-
