@@ -2,11 +2,11 @@
 
 [![Build Status](https://travis-ci.org/kouhei-fuji/vjs_rails.svg?branch=master)](https://travis-ci.org/kouhei-fuji/vjs_rails) [![Coverage Status](https://img.shields.io/coveralls/kouhei-fuji/vjs_rails.svg)](https://coveralls.io/r/kouhei-fuji/vjs_rails) [![Gem Version](https://badge.fury.io/rb/vjs_rails.svg)](http://badge.fury.io/rb/vjs_rails)
 
-VjsRails is for using Video.js in Rails applications.
+VjsRails is for using Video.js in Rails applications. It works in [Turbolinks](https://github.com/rails/turbolinks).
 
 Video.js:
 
-- version 4.9.1
+- Version 4.9.1
 - http://www.videojs.com/
 
 ## Installation
@@ -44,21 +44,47 @@ In your `application.js`:
 //= require vjs.flash
 
 # if you want to use a Japanese version
-# see more: https://github.com/kouhei-fuji/vjs_rails/tree/master/vendor/assets/langs
+# see more: vendor/assets/langs/
 //= require vjs.ja
 ```
 In your `application.css`:
 
 ```css
-/*
- *= require vjs
- *
- * If you want to customize it, see: http://designer.videojs.com/
- * you can copy and add your customized css instead of `vjs`
- *
- *= require my_custom_css
- */
+*= require vjs
 ```
+
+If you want to customize css:
+
+```
+$ bin/rails g vjs_rails:assets --help
+Usage:
+  rails generate vjs_rails:assets [FILE_NAME] [options]
+
+Options:
+  -l, [--less], [--no-less]  # Create LESS file instead of CSS
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Description:
+    Creates the Video.js CSS file to your application.
+
+Example:
+    rails g vjs_rails:assets [FILE_NAME]
+
+    This will create:
+        DEFAULT:   app/assets/stylesheets/vjs.css.erb
+        FILE_NAME: app/assets/stylesheets/FILE_NAME.css.erb
+
+$ bin/rails g vjs_rails:assets
+      create  app/assets/stylesheets/vjs.css.erb
+```
+
+Or: You can create customized css in [VIDEO.JS PLAYER DESIGNER](http://designer.videojs.com/).
+
 
 ### Use VjsRails Helper
 
@@ -87,9 +113,7 @@ If you don't use haml, please replace it.
 
 ## Example
 
-VjsRails provides an example rails application in spec/dummy directory.
-
-https://github.com/kouhei-fuji/vjs_rails/tree/master/spec/dummy
+VjsRails provides an example rails application in [spec/dummy directory](https://github.com/kouhei-fuji/vjs_rails/tree/master/spec/dummy).
 
 ```
 $ git clone git@github.com:kouhei-fuji/vjs_rails.git
@@ -109,4 +133,4 @@ $ open http://localhost:3000
 
 ## License
 
-VjsRails under the [MIT License](https://github.com/kouhei-fuji/vjs_rails/blob/master/MIT-LICENSE).
+VjsRails is under the [MIT License](https://github.com/kouhei-fuji/vjs_rails/blob/master/MIT-LICENSE).
