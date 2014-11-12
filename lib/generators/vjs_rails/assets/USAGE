@@ -1,0 +1,9 @@
+Description:
+    Creates the Video.js CSS file to your application.
+
+Example:
+    rails g vjs_rails:assets [FILE_NAME]
+
+    This will create:
+        DEFAULT:   app/assets/stylesheets/vjs.css.erb
+        FILE_NAME: app/assets/stylesheets/FILE_NAME.css.erb
