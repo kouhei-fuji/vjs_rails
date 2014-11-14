@@ -1,4 +1,4 @@
-%video{ id: "#{options[:id]}", class: "video-js vjs-default-skin #{options[:class]}", :'data-setup' => data_setup }
+%video{ id: "#{options[:id]}", :class => "video-js vjs-default-skin #{options[:class]}", poster: "#{options[:poster]}", :'data-setup' => data_setup }
   - if options[:sources]
     - options[:sources].each do |mime, url|
       %source{ src: "#{url}", type: "#{mime}" }
