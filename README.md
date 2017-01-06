@@ -133,4 +133,4 @@ $ open http://localhost:3000
 
 ## License
 
-VjsRails is under the [MIT License](https://github.com/kouhei-fuji/vjs_rails/blob/master/MIT-LICENSE).
+VjsRails is is under the [MIT License](https://opensource.org/licenses/MIT).
